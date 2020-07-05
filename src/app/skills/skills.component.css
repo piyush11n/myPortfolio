@@ -1,0 +1,50 @@
+.content_about {
+  /* color: white; */
+  padding: 10px 20px 10px 20px;
+  font-size: 25px;
+  line-height: 2.2rem;
+  margin-top: 50px;
+    margin-bottom: 50px;
+}
+.headerHeading {
+  color: blue;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 2.6rem;
+}
+.aboutContent {
+  font-size: 25px;
+}
+.headerBar h1 {
+  margin: 0px !important;
+  padding: 10px 0px 10px !important;
+}
+
+/* .example-card {
+    max-width: 300px;
+  } */
+
+.example-header-image {
+  background-image: url("../../assets/cogniaimLogo.png");
+  background-size: cover;
+}
+.mat-card {
+  background-color: #1d1d1d;
+  color: #ffffff;
+  /* margin-right: 2px; */
+  margin: 2px;
+  display: inline-block;
+}
+
+@media (min-width: 768px) {
+  .col-md-4 {
+    max-width: 32% !important;
+  }
+}
+
+.skillImg{
+    width: 160px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}

@@ -1,0 +1,20 @@
+.myProfile{
+/* position: relative; */
+height: 100%;
+}
+.myProfile .left{
+    display: inline-block;
+    text-align: left;
+    padding-left: 50px;
+    vertical-align: middle;
+}
+.myProfile .vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 40%;
+    -ms-transform: translateY(-35%);
+    transform: translateY(-35%);
+  }
+  .right{
+    display: inline-block;
+  }

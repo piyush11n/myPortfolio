@@ -1,0 +1,69 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport
+      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+      [mode]="(isHandset$ | async) ? 'over' : 'side'"
+      [opened]="(isHandset$ | async) === false">
+    <mat-toolbar style="color: blue;font-size: 24px;padding: 28px;">PIYUSH ADANIYA</mat-toolbar>
+    <p style="color: blue;text-align: center;">Full Stack Developer</p>
+    <mat-nav-list >
+      <a mat-list-item  routerLink="/about" style="color: white;">
+        <mat-icon aria-hidden="false" aria-label="Example home icon" style="color: #0000ff;">person</mat-icon>
+      <span style="padding-left: 15px;">About</span>  
+      </a>
+
+      <a mat-list-item  routerLink="/about" style="color: white;">
+        <mat-icon aria-hidden="false" aria-label="Example home icon"  style="color: #08c608;">assessment</mat-icon>
+      <span style="padding-left: 15px;">Experience</span>  
+      </a>
+
+      <a mat-list-item  routerLink="/about" style="color: white;">
+        <mat-icon aria-hidden="false" aria-label="Example home icon" style="color: #cc08cc;">storage</mat-icon>
+      <span style="padding-left: 15px;">Projects</span>  
+      </a>
+
+      <a mat-list-item  routerLink="/about" style="color: white;">
+        <mat-icon aria-hidden="false" aria-label="Example home icon" style="color: #ffba17;">star</mat-icon>
+      <span style="padding-left: 15px;">Skills</span>  
+      </a>
+
+      <a mat-list-item  routerLink="/about" style="color: white;">
+        <mat-icon aria-hidden="false" aria-label="Example home icon" style="color: #882cdd;">school</mat-icon>
+      <span style="padding-left: 15px;">Education</span>  
+      </a>
+
+      <a mat-list-item  routerLink="/about" style="color: white;">
+        <mat-icon aria-hidden="false" aria-label="Example home icon" style="color: #d0681d;">perm_contact_calendar</mat-icon>
+      <span style="padding-left: 15px;">Contact</span>  
+      </a>
+
+      <!-- <a mat-list-item  routerLink="/about" style="color: white;">
+        <mat-icon aria-hidden="false" aria-label="Example home icon" style="color: #037b7b;">description</mat-icon>
+      <span style="padding-left: 15px;">Resume</span>  
+      </a> -->
+
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <!-- <mat-toolbar color="primary"> -->
+      <button
+        type="button"
+        aria-label="Toggle sidenav"
+        mat-icon-button
+        (click)="drawer.toggle()"
+        *ngIf="isHandset$ | async">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+      <!-- <router-outlet></router-outlet> -->
+      
+      <app-my-profile></app-my-profile>
+      <app-about></app-about>
+      <app-experience></app-experience>
+      <app-projects></app-projects>
+      <app-skills></app-skills>
+      <app-education></app-education>
+      <app-contact></app-contact>
+      <!-- <span>portfolio</span>
+    </mat-toolbar> -->
+    <!-- Add Content Here -->
+  </mat-sidenav-content>
+</mat-sidenav-container>

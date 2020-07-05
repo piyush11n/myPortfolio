@@ -1,0 +1,44 @@
+#projects .content_about{
+    /* color: white; */
+    padding: 10px 20px 10px 20px;
+    font-size: 25px;
+    line-height: 2.2rem;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+#projects .headerHeading {
+    color: blue;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 2.6rem;
+}
+#projects .aboutContent{
+    font-size: 25px;
+}
+#projects .headerBar h1{
+    margin: 0px !important;
+    padding: 10px 0px 10px !important;
+}
+
+#projects .example-card {
+    max-width: 530px;
+  }
+  
+  #projects .example-header-image {
+    background-image: url('../../assets/cogniaimLogo.png');
+    background-size: cover;
+  }
+  #projects .mat-card {
+      background-color: #1d1d1d;
+      color: #ffffff;
+  }
+
+  #projects .left{
+      display: inline-block;
+
+  }
+  #projects .right{
+    display: inline-block;
+    vertical-align: top;
+    padding: 0% !important;
+}

@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family:"Montserrat", sans-serif !important;background-color: black;color: white; }
+
+
+
+.headerBar {
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    border-bottom: 1px solid;
+    background-color: #0000ff;
+    color: #ffffff;
+}
+.headerBar h1{
+    font-size: 40px;
+}
